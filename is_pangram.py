@@ -5,13 +5,18 @@ def remove_duplicates(string):
             uniqueCharacters += i
     return uniqueCharacters
 
+def remove_nonalpha(string):
+    return ''.join([i for i in string if i.isalpha()])
+
 def is_pangram(string):
+    string = string.lower()
     string = remove_duplicates(string)
     string = "".join(sorted(string))
-    print(string)
-    if string.lower() == "abcdefghijklmnopqrstuvwxyz":
+    string = remove_nonalpha(string)
+    if string.strip() == "abcdefghijklmnopqrstuvwxyz":
         return True
     return False
+
 
 
 
