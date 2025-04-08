@@ -1,8 +1,11 @@
 def count(string):
     wordCount = {}
-    
+    uniqueCharacters = remove_duplicates(string)
     for i in string:
-        numberOfInstances = i.count()
+        if i in uniqueCharacters:
+            numberOfInstances = string.count(i)
+            wordCount.update({i: numberOfInstances})
+            uniqueCharacters.replace(i, "")
     return wordCount
 
 def remove_duplicates(string):
@@ -13,4 +16,4 @@ def remove_duplicates(string):
     return uniqueCharacters
 
 
-count('aabb')
+print(count('aabb'))
