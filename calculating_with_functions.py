@@ -7,11 +7,11 @@ def zero(operator=0):
 def one(operator=1): 
     if type(operator) is not list:
         return 1
-    return makeOperations(operator[0], 2, operator[1])
+    return makeOperations(operator[0], 1, operator[1])
 def two(operator=2):
     if type(operator) is not list:
         return 2
-    return makeOperations(operator[0], 3, operator[1])
+    return makeOperations(operator[0], 2, operator[1])
 def three(operator = 3):
     if type(operator) is not list:
         return 3
@@ -21,8 +21,8 @@ def four(operator=4):
     if type(operator) is not list:
         return 4
     return makeOperations(operator[0], 4, operator[1])
-def five(operator):
-    if type(operator=5) is not list:
+def five(operator=5):
+    if type(operator) is not list:
         return 5
     return makeOperations(operator[0], 5, operator[1])
 def six(operator=6):
@@ -49,7 +49,7 @@ def minus(number):
     return ["-", number]
     pass #your code here
 def times(number):
-    return "*", number 
+    return ["*", number]
     pass #your code here
 def divided_by(number):
     return ["/", number]
@@ -69,8 +69,4 @@ def makeOperations(operator, x, y):
         case "/":
             return x // y
 
-print(three())
-print(plus(three()))
-print(eight())
-print(three(plus(three())))
-print(eight(divided_by(three())))
+print(two(times(five())))
