@@ -5,7 +5,7 @@ def max_sequence(array):
         intermediarySum += number
         if intermediarySum < 0:
             intermediarySum = 0
-        if intermediarySum >= sum:
+        if intermediarySum > sum:
             sum = intermediarySum
     return sum
 
