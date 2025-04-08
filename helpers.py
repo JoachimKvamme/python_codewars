@@ -1,10 +1,3 @@
-def count(string):
-    wordCount = {}
-    
-    for i in string:
-        numberOfInstances = i.count()
-    return wordCount
-
 def remove_duplicates(string):
     uniqueCharacters = ""
     for i in string:
@@ -12,5 +5,5 @@ def remove_duplicates(string):
             uniqueCharacters += i
     return uniqueCharacters
 
-
-count('aabb')
+def remove_nonalpha(string):
+    return ''.join([i for i in string if i.isalpha()])
