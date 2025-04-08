@@ -4,12 +4,12 @@ def tribonacci(signature, n):
     c = signature[2]
     next = 0
     result = [a, b, c]
-    n = n - len(result)
     if n < 0:
         return []
-    if n < 4:
-        print(result)
+    if n < len(result):
+        return result[:n]
 
+    n = n - len(result)
     for i in range(1, n+1):
         next = a + b + c
         a = b
@@ -22,4 +22,4 @@ def tribonacci(signature, n):
 
 
 print(tribonacci([1, 1, 1], 10))
-print(tribonacci([1, 1, 1], 5))
+print(tribonacci([1, 1, 1], 1))
