@@ -33,7 +33,6 @@ def increment_string(string):
     print(incremented_string)
     return incremented_string
 
-
 print(increment_string("bar1"))
 print(increment_string("bar001"))
 print(increment_string("bar100"))
@@ -43,5 +42,6 @@ print(increment_string("O-_5660\\luu?+q80650800009"))
 print(increment_string("foobar001"))
 print(increment_string("foobar00"))
 print(increment_string("fo99obar99"))
+print(increment_string("foobar99"))
 
 # 'O-_5660\\luu?+q80650800009': 'O-_5660\\luu?+q806508000010' should equal 'O-_5660\\luu?+q80650800010'
