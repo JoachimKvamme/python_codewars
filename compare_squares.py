@@ -1,4 +1,6 @@
 def comp(array1, array2):
+    if array1 == [] and array2 == []:
+        return True
     if array1 == [] or array2 == [] or len(array1) != len(array2):
         return False
     array_squared = []
