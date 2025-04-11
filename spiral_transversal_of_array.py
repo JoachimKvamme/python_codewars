@@ -11,8 +11,8 @@ def snail(array):
     result = []
     top = 0
     bottom = len(array) - 1
-    right = int(-1)
-    left = int(0)
+    right = -1
+    left = 0
     for x in range(0, bottom + 1):
         #left => right top
         for i in range(top, bottom+1):
