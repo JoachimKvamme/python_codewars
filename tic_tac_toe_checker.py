@@ -1,5 +1,5 @@
 # Denne funksjonen tar 2d-array som tilsvarer en bondesjakkstilling.
-# Funksjonen skal sjekke hvem som vant, eventuelt om det endte i uavgjort (kaller man det remis i bondesjakk),
+# Funksjonen skal sjekke hvem som vant, eventuelt om det endte i uavgjort (kaller man det remis i bondesjakk?),
 # eller om spillet fremdeles er i gang.
 
 def is_solved(tic_tac):
